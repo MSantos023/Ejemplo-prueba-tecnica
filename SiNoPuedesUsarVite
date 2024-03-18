@@ -1,0 +1,44 @@
+SI NO PUEDES USAR EL VITE EN LA PRUEBA TECNICA PUEDES USAR LO SIGUIENTE:
+
+- npm create vite@latest
+- vanilla
+- javasrcipt
+- cd (carpeta)
+- npm install @vitejs/plugin-react -E
+- npm install react react-dom -E  
+   (instala la biblioteca react(react) y la dependencia con los bindings del navegador(react-dom))
+- code.(abre visual)
+- creamos el archivo de configuracion de vite
+  nombre: vite.config.js
+  dentro del archivo:
+
+  import {defineConfig} from "vite"
+  import react from "@vitejs/plugin-react"
+
+  export default defineConfig({
+  plugins:[react()]
+  })
+
+- con esto ya estaria inicializado el proyecto si no nos dejan que vite lo crea solo
+- ahora hay que crear el punto de entrada
+- en el archivo main.js (es el script que se carga al iniciar el proyecto) importamoslo siguiente:
+
+    import {createRoot} from "react-dom/client"
+
+    createRoot(document.getElementById('nombre del id donde se quiere renderizar del index.html'))
+
+    root.render(
+        la aplicacion que se quiere renderizar
+    )
+
+- ahora hay que cambiar la extension del archivo main.js a main.jsx y tambien hay que cambiarla
+    en el script del index.html
+
+- Ahora instalamos el linter para que vean que te manejas
+- incluimos en el package.json lo siguiente
+
+    "eslintConfig": {
+        "extends": "./node_modules/standard/eslintrc.json"
+    }
+
+- 

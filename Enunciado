@@ -1,0 +1,20 @@
+# Ejemplo de prueba tecnica para juniors y trainees de react en live coding
+
+***API´s: ***
+
+- Facts Random: https://catfact.ninja/fact
+- Imagen Random: https://cataas.com/cat/says/hello
+
+Recupera un hecho aleatorio de gatos de la primera API
+y muesta la imagen de un gato con la primera palabra del hecho recuperado usando la segunda API
+
+**Cosas adicionales:**
+
+- Crear una prueba end to end
+
+**QUE SE PRACTICA EN ESTA PRUEBA TECNICA:**
+
+- Manejo de estados
+- Fecthing de datos
+- dependencia de estados (uno depende del otro)
+- test end to end
